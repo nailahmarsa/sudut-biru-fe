@@ -1,0 +1,14 @@
+/*Style bersama: font, warna utama, tombol umum, dan aturan dasar tampilan.
+/* Pengaturan bersama */
+:root {
+  --color-primary: #2563eb;
+  --color-background: #f8fafc;
+  --color-surface: #fff;
+  --color-text: #0f172a;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Inter", sans-serif; color: var(--color-text); background: var(--color-background); }
+button, input, select, textarea { font: inherit; }

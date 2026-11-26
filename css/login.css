@@ -1,0 +1,171 @@
+/* Dasar halaman */
+.login-page {
+  --login-blue: #2563eb;
+  --login-text: #0f172a;
+  --login-muted: #64748b;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: var(--login-text);
+  background: #f8fafc;
+}
+.login-page .login-layout { min-height: 100vh; min-height: 100svh; }
+
+/* Panel kiri */
+.login-page .brand-panel { padding: 0 55px; color: #fff; background: var(--login-blue); }
+.login-page .brand-content { display: flex; flex-direction: column; min-height: 834px; height: 100%; padding: 181px 0 59px; }
+.login-page .logo-plate {
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; width: 350px; max-width: 100%; min-height: 84px;
+  padding: 17px 24px; border-radius: 12px; background: #fff;
+}
+.login-page .logo-plate img { display: block; max-width: 100%; height: auto; }
+.login-page .brand-story { margin-top: 112px; }
+.login-page .brand-story h1 { margin-bottom: 8px; font-size: 36px; font-weight: 700; line-height: 46px; }
+.login-page .brand-story p { margin: 0; font-size: 14px; line-height: 1.5; color: #dbeafe; }
+.login-page .brand-footer { margin-top: auto; padding-top: 60px; font-size: 14px; }
+.login-page .brand-footer p:last-child { color: #bfdbfe; font-size: 12px; }
+
+/* Panel kanan */
+.login-page .form-panel { display: flex; align-items: center; justify-content: center; padding: 48px; }
+.login-page .login-card {
+  width: 100%; max-width: 530px; min-height: 658px;
+  border: 1px solid #e2e8f0; border-radius: 12px; background: #fff;
+  box-shadow: 0 2px 6px rgb(15 38 77 / 4%), 0 12px 36px rgb(15 38 77 / 10%);
+}
+.login-page .login-card .card-body { padding: 32px; }
+.login-page .login-card h2 { margin: 0 0 12px; font-size: 24px; font-weight: 700; line-height: 1.25; }
+.login-page .login-subtitle { margin-bottom: 24px; color: var(--login-muted); font-size: 14px; }
+
+/* Pilihan Kasir / Admin */
+.login-page .role-fieldset { margin: 0 0 28px; padding: 0; border: 0; }
+.login-page .role-fieldset legend { float: none; margin-bottom: 12px; font-size: 12px; color: var(--login-muted); }
+.login-page .role-fieldset .flex-fill { flex: 1 1 0 !important; min-width: 0; }
+.login-page .role-button {
+  display: flex; align-items: center; justify-content: center;
+  min-height: 44px; border: 1px solid #e2e8f0; border-radius: 8px;
+  color: var(--login-muted); background: #fff; font-size: 14px; font-weight: 600;
+}
+.login-page .role-button:hover { color: var(--login-blue); border-color: var(--login-blue); background: #eff6ff; }
+.login-page .btn-check:checked + .role-button { color: #fff; background: var(--login-blue); border-color: var(--login-blue); }
+.login-page .btn-check:focus-visible + .role-button { outline: 3px solid #93c5fd; outline-offset: 3px; }
+
+/* Input username dan password */
+.login-page .login-field { margin-bottom: 24px; }
+.login-page .form-label { margin-bottom: 12px; font-size: 14px; font-weight: 500; }
+.login-page .form-control { min-height: 48px; padding: 12px 16px; border-color: #e2e8f0; border-radius: 8px; font-size: 14px; }
+.login-page .form-control::placeholder { color: var(--login-muted); opacity: 1; }
+.login-page .form-control:focus { border-color: var(--login-blue); box-shadow: 0 0 0 3px rgb(37 99 235 / 15%); }
+.login-page .password-input { padding-right: 56px; }
+
+/* Tombol mata Font Awesome */
+.login-page .password-toggle {
+  position: absolute; top: 4px; right: 4px;
+  display: grid; place-items: center; width: 40px; height: 40px;
+  padding: 0; border: 0; border-radius: 6px; background: transparent;
+  color: var(--login-muted); font-size: 18px; cursor: pointer;
+}
+.login-page .password-toggle:hover { background: #f1f5f9; }
+.login-page .password-toggle[aria-pressed="true"] { color: var(--login-blue); background: #dbeafe; }
+.login-page .password-toggle:focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; }
+
+/* Ingat saya dan lupa kata sandi */
+.login-page .login-options { margin-top: 8px; }
+.login-page .form-check-label { color: var(--login-muted); font-size: 12px; cursor: pointer; }
+.login-page .form-check-input { cursor: pointer; }
+.login-page .form-check-input:checked { background-color: var(--login-blue); border-color: var(--login-blue); }
+.login-page .form-check-input:focus { border-color: var(--login-blue); box-shadow: 0 0 0 3px rgb(37 99 235 / 15%); }
+.login-page .forgot-button { color: var(--login-blue); font-size: 12px; font-weight: 600; text-decoration: none; }
+.login-page .forgot-button:hover { color: #1d4ed8; text-decoration: underline; }
+
+/* Tombol masuk */
+.login-page .login-submit {
+  --bs-btn-bg: var(--login-blue);
+  --bs-btn-border-color: var(--login-blue);
+  --bs-btn-hover-bg: #1d4ed8;
+  --bs-btn-hover-border-color: #1d4ed8;
+  --bs-btn-active-bg: #1e40af;
+  --bs-btn-active-border-color: #1e40af;
+  --bs-btn-disabled-bg: var(--login-blue);
+  --bs-btn-disabled-border-color: var(--login-blue);
+  min-height: 48px; margin-top: 40px; border-radius: 8px; font-size: 14px; font-weight: 600;
+}
+.login-page .login-message { margin-top: 16px; color: #475569; font-size: 13px; line-height: 1.5; overflow-wrap: anywhere; }
+.login-page .login-message:empty { display: none; }
+
+/* Desktop: proporsi panel mengikuti Figma */
+@media (min-width: 992px) {
+  .login-page .brand-panel { width: 46.4%; }
+  .login-page .form-panel { width: 53.6%; }
+}
+
+/* Tablet dan HP */
+@media (max-width: 991.98px) {
+  .login-page .brand-panel { padding: 32px 24px; }
+  .login-page .brand-content { min-height: auto; padding: 0; }
+  .login-page .brand-story { margin-top: 32px; }
+  .login-page .brand-story h1 { font-size: 30px; line-height: 1.3; }
+  .login-page .brand-footer { padding-top: 32px; }
+  .login-page .form-panel { padding: 32px 20px; }
+  .login-page .login-card { min-height: auto; }
+}
+
+/* HP kecil */
+@media (max-width: 399.98px) {
+  .login-page .login-card .card-body { padding: 24px 20px; }
+  .login-page .login-card h2 { font-size: 22px; }
+}
+/* Halaman lupa kata sandi */
+.login-page .recovery-card { min-height: 476px; }
+.login-page .recovery-card .login-subtitle { margin-bottom: 54px; }
+.login-page .recovery-hint { margin: 16px 0 0; color: var(--color-muted); font-size: 12px; line-height: 1.5; }
+.login-page .recovery-submit { min-height: 44px; margin-top: 40px; }
+.login-page .back-login { display: inline-block; margin-top: 28px; color: var(--color-primary); font-size: 14px; font-weight: 500; text-decoration: none; }
+.login-page .back-login:hover { text-decoration: underline; }
+
+/* Halaman ubah kata sandi */
+.login-page .reset-card { max-width: 480px; min-height: 616px; border: 0; box-shadow: none; }
+.login-page .reset-card .card-body { display: flex; flex-direction: column; padding: 28px; }
+.login-page .reset-card .login-subtitle { margin-bottom: 38px; }
+.login-page .reset-form { display: flex; flex-direction: column; flex: 1; }
+.login-page .reset-card .form-control[readonly] { color: var(--color-muted); background: #fff; }
+.login-page .reset-actions { display: grid; grid-template-columns: 156fr 252fr; gap: 16px; margin-top: auto; padding-top: 32px; }
+.login-page .reset-actions .login-submit { min-height: 44px; margin-top: 0; }
+.login-page .reset-cancel { display: flex; align-items: center; justify-content: center; min-height: 44px; border: 1px solid var(--color-border); border-radius: 8px; color: var(--color-text); font-size: 14px; font-weight: 600; }
+.login-page .reset-cancel:hover { background: #f1f5f9; }
+
+/* Layar kecil */
+@media (max-width: 991.98px) {
+  .login-page .recovery-card, .login-page .reset-card { min-height: auto; }
+  .login-page .recovery-card .login-subtitle { margin-bottom: 32px; }
+}
+@media (max-width: 399.98px) {
+  .login-page .reset-card .card-body { padding: 24px 20px; }
+  .login-page .reset-actions { grid-template-columns: 1fr; gap: 12px; }
+}
+
+/* Loading screen */
+.loading-page {
+  display: grid; place-items: center; min-height: 100vh; min-height: 100svh;
+  margin: 0; padding: 32px 20px; font-family: "Inter", sans-serif;
+  background: #f8fafc; color: #0f172a;
+}
+.loading-content { width: 100%; max-width: 460px; }
+.loading-logo { display: block; width: 288px; max-width: 85%; height: auto; margin: 0 auto 56px; }
+.loading-content h1 { margin: 0 0 16px; font-size: 24px; font-weight: 700; line-height: 1.3; }
+.loading-description { margin: 0; color: #64748b; font-size: 14px; }
+.loading-track { width: 100%; max-width: 352px; height: 6px; margin: 38px auto 30px; overflow: hidden; border-radius: 3px; background: #dbeafe; }
+.loading-fill { height: 100%; border-radius: inherit; background: #2563eb; animation: loading-progress 2s linear infinite; }
+.loading-role { margin: 0 0 16px; color: #2563eb; font-size: 12px; font-weight: 500; }
+@keyframes loading-progress {
+  0% { animation-timing-function: ease-out; width: 16px; }
+  17.5% { animation-timing-function: ease-in-out; width: 136px; }
+  42.5% { animation-timing-function: ease-out; width: 292px; }
+  57.5%, 100% { width: 352px; }
+}
+@media (max-width: 575.98px) {
+  .loading-logo { margin-bottom: 40px; }
+  .loading-content h1 { font-size: 22px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .loading-fill { animation: none; width: 66%; }
+}
